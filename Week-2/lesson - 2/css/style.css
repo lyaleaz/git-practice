@@ -1,35 +1,97 @@
-.container{
-  padding: 10px;
-  position: relative;
+#chat {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 15fr 1fr;
+    grid-template-areas: 
+        "f c"
+        "f i";
 }
 
-.head{
-  height: 70px;
-  width: 90%;
-  right: 0;
-  position: absolute;
-  background-color: #a29bfe;
-  display:inline-block;
-
+#friends {
+    grid-area: f;
+    display: grid;
+     background-color: purple;
+    left: 10px;
+    height: 100%;
 }
 
-.side-nav{
-  height: 500px;;
-  width: 10%;
-  background-color: #6c5ce7;
-  display: inline-block;
+#chatbox {
+    grid-area: c;
+    display: grid;
+    background-color: lightblue;
+    grid-template-columns: auto;
 }
 
-.main{
-  position: absolute;
-  display: inline-block;
-  width: 100%;
+#input {
+    grid-area: i;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px;
 }
 
-.inner-content{
-  position: absolute;
-  top: 70px;
-  height: 430px;
-  width: 90%;
-  background-color:red;
+/* .textinput{
+    width:70%;
+   padding: 10px;
+  
+} */
+
+.input{
+   grid-template-columns: 10fr 2fr;
+   grid-area: i;
+   display: grid;
+   padding-top: -15px;
+
 }
+.send-btn{
+display: grid;
+align-content: center;
+justify-content: center;
+background-color: blueviolet;
+color: wheat;
+}
+
+
+.frinds-name {
+    background-color: rgb(122, 86, 115);
+    height: 4vh;
+    width: 290px;
+        justify-self: center; /* Align to the right */
+
+   
+    
+}
+
+.text-container.left {
+    background-color: gray;
+    margin: 4px;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.text-container.right {
+    background-color: green;
+    margin: 4px;
+    padding: 8px;
+    font-size: 14px;
+    justify-self: end; 
+}
+
+.time {
+    font-size: 12px;
+    text-align: right;
+}
+
+    .text-container {
+        margin: 8px;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas: "m m t";
+        align-items: end;
+        margin-top: 7vh;
+        height: fit-content;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: fit-content;
+    }
