@@ -1,0 +1,9 @@
+#form-container {
+    max-width: 300px;
+    margin: 20px;
+}
+
+#error-message {
+    color: red;
+    margin-top: 10px;
+}

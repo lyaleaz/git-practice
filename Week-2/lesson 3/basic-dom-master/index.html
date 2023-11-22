@@ -6,16 +6,17 @@
   </head>
 
   <body>
+    <h2 class="sub-header">Game by:</h2>
     <div id="container">
       <div id="playing-field" class="centered">
         <div id="ball" class="centered"></div>
       </div>
       <div id="arrows" class="centered">
         <h1 class="my-header"></h1>
-        <div id="up" class="arrow">&uarr;</div>
-        <div id="left" class="arrow">&larr;</div>
-        <div id="right" class="arrow">&rarr;</div>
-        <div id="down" class="arrow">&darr;</div>
+        <div id="up" class="arrow" onclick="moveUp()">&uarr;</div>
+        <div id="left" class="arrow" onclick="moveLeft()">&larr;</div>
+        <div id="right" class="arrow" onclick="moveRight()">&rarr;</div>
+        <div id="down" class="arrow" onclick="moveDown()">&darr;</div>
       </div>
     </div>
     <script src="main.js"></script>
