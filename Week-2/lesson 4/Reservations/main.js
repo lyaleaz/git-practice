@@ -2,7 +2,6 @@
      const reservations = {
             Bob: { claimed: false },
             Ted: { claimed: true }
-            // Add more reservations as needed
         };
   function checkReservation() {
             const enteredName = document.getElementById('name').value.toLowerCase();
